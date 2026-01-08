@@ -144,8 +144,7 @@
          <div class="mood-content">
             @if($dailyMood->mood->image)
                 <div class="mood-image-wrapper">
-                    {{-- Use secure_asset to force HTTPS in mixed-content environments (like Railway) --}}
-                    <img src="{{ secure_asset($dailyMood->mood->image) }}" alt="{{ $dailyMood->mood->name }}" class="mood-image">
+                    <img src="{{ asset($dailyMood->mood->image) }}" alt="{{ $dailyMood->mood->name }}" class="mood-image">
                 </div>
             @else
                 <div class="mood-emoji-placeholder">

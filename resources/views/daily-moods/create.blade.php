@@ -61,6 +61,7 @@
         </form>
     </div>
 </div>
+@endsection
 
 @section('scripts')
 <style>
@@ -78,5 +79,4 @@
 <script>
     // No explicit JS needed for radio styling with the CSS sibling selector approach
 </script>
-@endsection
 @endsection

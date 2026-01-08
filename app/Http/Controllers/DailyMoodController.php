@@ -46,7 +46,10 @@ class DailyMoodController extends Controller
         $currentMonth = $request->has('month') ? $request->month : now()->month;
         $currentYear = $request->has('year') ? $request->year : now()->year;
 
-        return view('dashboard', compact('moodDates', 'moodsByDate', 'currentMonth', 'currentYear'));
+        // Get daily moods for stats
+        $dailyMoods = DailyMood::all();
+
+        return view('dashboard', compact('moodDates', 'moodsByDate', 'currentMonth', 'currentYear', 'dailyMoods'));
     }
 
     /**

@@ -3,11 +3,6 @@
 @section('title', 'Edit Catatan Mood - DailyMood')
 
 @section('content')
-@extends('layouts.layout')
-
-@section('title', 'Edit Mood - DailyMood')
-
-@section('content')
 <div style="max-width: 800px; margin: 0 auto;">
     <div style="margin-bottom: 2rem; text-align: center;">
         <h2 style="font-size: 1.875rem; color: var(--text-heading); font-weight: 700; letter-spacing: -0.025em; margin-bottom: 0.5rem;">Edit Catatan</h2>
